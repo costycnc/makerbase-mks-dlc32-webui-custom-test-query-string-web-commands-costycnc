@@ -8,4 +8,6 @@
        
        http://www.msftconnecttest.com/command?commandText=M5 (M5-pwm off)
 
+https://github.com/makerbase-mks/MKS-DLC32/tree/main/MKS-DLC32-main/firmware
+
  https://github.com/makerbase-mks/MKS-DLC32/blob/main/MKS-DLC32-main/firmware/tool/MKSLaserTool_setupV2.0.4.rar
