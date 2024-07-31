@@ -12,6 +12,12 @@
 
        http://www.msftconnecttest.com/upload?path=%2F&action=delete&filename=Alex.nc&PAGEID=0 (delete Alex.nc from sd card)
 
+       http://www.msftconnecttest.com/files (quando salvo index.html.gz)
+
+       http://www.msftconnecttest.com/files?action=list&filename=all&path=/&PAGEID=1
+
+
+
 https://github.com/makerbase-mks/MKS-DLC32/tree/main/MKS-DLC32-main/firmware
 
  https://github.com/makerbase-mks/MKS-DLC32/blob/main/MKS-DLC32-main/firmware/tool/MKSLaserTool_setupV2.0.4.rar
