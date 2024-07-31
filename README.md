@@ -10,6 +10,8 @@
 
        http://www.msftconnecttest.com/command?commandText=%5BESP220%5D/Agata.nc&PAGEID=0 (execute Agata.nc from sd card)
 
+       http://www.msftconnecttest.com/upload?path=%2F&action=delete&filename=Alex.nc&PAGEID=0 (delete Alex.nc from sd card)
+
 https://github.com/makerbase-mks/MKS-DLC32/tree/main/MKS-DLC32-main/firmware
 
  https://github.com/makerbase-mks/MKS-DLC32/blob/main/MKS-DLC32-main/firmware/tool/MKSLaserTool_setupV2.0.4.rar
