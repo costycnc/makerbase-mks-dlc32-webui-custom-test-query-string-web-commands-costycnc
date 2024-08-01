@@ -1,0 +1,84 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>ESP3D WebUI</title>
+
+
+</head>
+<body>
+<textarea cols="22" rows="6" onchange="costycncdesign(this.value)"></textarea>
+<a href="/command?commandText=%5BESP221%5D/costycnc.nc&PAGEID=0"><button>VIEW costycnc.nc</button></a>
+<a href="/command?commandText=%5BESP220%5D/costycnc.nc&PAGEID=0"><button>EXECUTE costycnc.nc</button></a>
+
+<input type="file" id="files_input_file" onchange="costycnc();" accept=".nc, .gc, .gcode" >
+<button onclick="cst();">send</button>
+</body>
+
+<script>
+
+
+
+function costycnc(){
+var file = document.getElementById("files_input_file").files;
+document.getElementById("name-file").href="/command?commandText=%5BESP220%5D/"+file[0].name+"&PAGEID=0"
+document.getElementById("name-file").innerHTML=file[0].name;
+
+var formData = new FormData();
+formData.append("path", "/");
+i = "/" + file[0].name + "S";
+formData.append(i, file[0].size);
+formData.append("myfile[]", file[0], "/" + file[0].name);
+document.getElementById("files_input_file").value = "";
+
+
+var xhr = new XMLHttpRequest();
+xhr.open('POST', '/upload', true);
+xhr.send(formData);
+}
+
+function costycncdesign(val){
+
+
+
+var parts = [
+  new Blob(['you construct a file...'], {type: 'text/plain'}),
+  ' Same way as you do with blob',
+  new Uint16Array([33])
+];
+
+var parts1 = [
+new Blob([val], {type: 'text/plain'})
+];
+
+
+// Construct a file
+var file = new File(parts1, 'costycnc.nc', {
+    lastModified: new Date(0), // optional - default = now
+    type: "overide/mimetype" // optional - default = ''
+});
+
+
+
+
+var formData = new FormData();
+formData.append("path", "/");
+i = "/" + file.name + "S";
+formData.append(i, file.size);
+formData.append("myfile[]", file, "/" + file.name);
+document.getElementById("files_input_file").value = "";
+
+
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'http://192.168.1.5/upload', true);
+xhr.send(formData);
+}
+
+
+function proba(text){
+alert(document.getElementById("txt-val").value.length);
+}
+
+</script>
+	</html>
