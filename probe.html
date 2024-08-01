@@ -8,12 +8,18 @@
 
 </head>
 <body>
-<textarea cols="22" rows="6" onchange="costycncdesign(this.value)"></textarea>
-<a href="/command?commandText=%5BESP221%5D/costycnc.nc&PAGEID=0"><button>VIEW costycnc.nc</button></a>
+<div style="border-style: double;">
+<p>Upload gcode text (when paste gcode text ... will upload to mks SD card with name "costycnc.nc"  </p>
+<p>You can execute costycnc.nc directly from here (when click "Execute costycnc.nc" the cnc begin working) </p>
+<textarea cols="22" rows="6" onchange="costycncdesign(this.value)"></textarea><br>
+<a href="/command?commandText=%5BESP221%5D/costycnc.nc&PAGEID=0"><button>VIEW costycnc.nc</button></a><br>
 <a href="/command?commandText=%5BESP220%5D/costycnc.nc&PAGEID=0"><button>EXECUTE costycnc.nc</button></a>
-
+</div><br>
+<br>
+<div style="border-style: dashed;">
+<p>Load file and put to mks sd card: </p>
 <input type="file" id="files_input_file" onchange="costycnc();" accept=".nc, .gc, .gcode" >
-<button onclick="cst();">send</button>
+</div>
 </body>
 
 <script>
@@ -76,9 +82,6 @@ xhr.send(formData);
 }
 
 
-function proba(text){
-alert(document.getElementById("txt-val").value.length);
-}
 
 </script>
 	</html>
