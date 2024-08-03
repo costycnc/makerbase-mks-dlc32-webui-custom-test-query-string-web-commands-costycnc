@@ -1,8 +1,12 @@
 # makerbase-mks-dlc32-web-commands
 
+[![Watch the video](https://img.youtube.com/vi/RiZj7So3t-4/hqdefault.jpg)]
+
 If upload probe.html in same folder with index.html.gz (mks-about-update webui-select files-upload probe.html)
 
 And open http://ip-mks/probe.html
+
+Bellow some utils web commands to comunicate with mks dlkc32:
 
        http://www.msftconnecttest.com/command?commandText=$J=G91%20G21%20F1500%20X-50&PAGEID=0 ----- move axe x 50
 
