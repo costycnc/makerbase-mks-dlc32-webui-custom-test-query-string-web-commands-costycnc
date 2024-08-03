@@ -1,8 +1,6 @@
 # makerbase-mks-dlc32-web-commands
 
-[]
-
-[![Watch the video]([https://img.youtube.com/vi/OY3z75zqwP8/hqdefault.jpg](https://user-images.githubusercontent.com/12979070/131437599-2b7aae8f-1569-4e38-b713-bb6b87596be5.png))](https://www.youtube.com/embed/OY3z75zqwP8)
+[![Watch the video](https://user-images.githubusercontent.com/12979070/131437599-2b7aae8f-1569-4e38-b713-bb6b87596be5.png)](https://www.youtube.com/embed/OY3z75zqwP8)
 
 [![aaa]([https://user-images.githubusercontent.com/12979070/131437599-2b7aae8f-1569-4e38-b713-bb6b87596be5.png])]
 
