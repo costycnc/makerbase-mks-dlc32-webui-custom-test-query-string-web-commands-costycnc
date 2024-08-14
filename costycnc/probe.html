@@ -54,7 +54,7 @@
   color: rgb(234, 234, 234);
   transition: 0.6s;
   outline: 2px solid white;
-  box-shadow: 0px 0px 10px white;
+  box-shadow: 0px 0px 20px white;
 }
 
 
@@ -79,7 +79,7 @@
   color: rgb(234, 234, 234);
   transition: 0.6s;
     outline: 2px solid #FEBF00;
-  box-shadow: 0px 0px 10px white;
+  box-shadow: 0px 0px 20px white;
 }
 
 
@@ -182,7 +182,7 @@
 
   <div class="row">
   <div class="column" >
-  <input  onchange="my()" type="text" placeholder="Write your text here..." name="text" class="input" id="litera"><hr>
+  <input  onchange="my();" type="text" placeholder="Write your text here..." name="text" class="input" id="litera"><input type="checkbox" id="nome" checked="" onchange="my();" class="btn1">Name<input type="checkbox" id="contourz" onchange="my();" checked="" class="btn1">Contour<hr>
   <input class="slider" style="width:20%;" type="range" min="100" max="400" step="10" value="300" id="myRanges" onchange="my()" ontouchmove="costycnc1(this.value)"><hr>
   ROTATE TABLE<hr>
 
@@ -241,7 +241,15 @@ dpi:
 <script>
 var svg1=document.getElementById("svg");
 var svg2=document.getElementById("svgcode");
+var nome=document.getElementById("nome");
+var contourz=document.getElementById("contourz");
+
 function my(){
+
+
+
+
+
 var fonth=document.getElementById("myRanges").value;
 var value=document.getElementById("litera").value;
 var font=document.getElementById("textarea").value;
@@ -264,8 +272,22 @@ txt.innerHTML = value;
 txt.setAttribute("font-size",fonth);
 txt.setAttribute("x",50);
 txt.setAttribute("y",fonth);
-txt.setAttribute("fill","white");
-txt.setAttribute("stroke","black");
+
+if (nome.checked && contourz.checked) {
+    txt.setAttribute("fill","white");
+    txt.setAttribute("stroke","black");
+} else {
+    if(nome.checked){
+    txt.setAttribute("fill","black");
+    txt.setAttribute("stroke","white");}
+	else{
+	
+    txt.setAttribute("fill","black");
+    txt.setAttribute("stroke","black");}
+
+}
+
+
 txt.setAttribute("stroke-width","40px");
 txt.setAttribute("font-family","Roboto");
 txt.setAttribute("paint-order","stroke");
