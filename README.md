@@ -1,3 +1,7 @@
+![](https://github.com/costycnc/makerbase-mks-dlc32-webui-custom-test-query-string-web-commands-costycnc/blob/main/1.jpg)
+![](https://github.com/costycnc/makerbase-mks-dlc32-webui-custom-test-query-string-web-commands-costycnc/blob/main/2.jpg)
+![](https://github.com/costycnc/makerbase-mks-dlc32-webui-custom-test-query-string-web-commands-costycnc/blob/main/3.jpg)
+
 # makerbase-mks-dlc32-web-commands
 
 ![](https://user-images.githubusercontent.com/12979070/131437599-2b7aae8f-1569-4e38-b713-bb6b87596be5.png)
