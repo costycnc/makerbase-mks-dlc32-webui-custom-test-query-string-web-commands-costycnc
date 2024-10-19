@@ -1,3 +1,4 @@
+all grbl mks dlc32 esp commands https://github.com/costycnc/esp32-micropython-with-mks-dlc32-board-costycnc/blob/main/Commands.txt
 ![](https://github.com/costycnc/makerbase-mks-dlc32-webui-custom-test-query-string-web-commands-costycnc/blob/main/2.jpg)
 ![](https://github.com/costycnc/makerbase-mks-dlc32-webui-custom-test-query-string-web-commands-costycnc/blob/main/1.jpg)
 ![](https://github.com/costycnc/makerbase-mks-dlc32-webui-custom-test-query-string-web-commands-costycnc/blob/main/3.jpg)
