@@ -1,3 +1,7 @@
+      $ESP100=xxxxxx  (your name router home)
+      $ESP101=xxxxxx  (Your password router home)
+      $ESP110=STA (Set/Get radio state which can be STA(router), AP(local), BT, OFF)
+      $ESP115=ON
 all grbl mks dlc32 esp commands https://github.com/costycnc/esp32-micropython-with-mks-dlc32-board-costycnc/blob/main/Commands.txt
 <hr>
 
